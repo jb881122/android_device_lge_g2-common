@@ -17,6 +17,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.fluence.voicerec=false \
     ro.vendor.audio.sdk.fluencetype=fluence
 
+# Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=0
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.chip.vendor=brcm \
