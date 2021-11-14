@@ -281,6 +281,9 @@ PRODUCT_SHIPPING_API_LEVEL := 17
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/vendor/etc/thermal-engine-8974.conf
 
+PRODUCT_PACKAGES += \
+    libshims_thermal
+
 # TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
