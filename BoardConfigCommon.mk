@@ -52,6 +52,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x05000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/lge/msm8974
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_CLANG_COMPILE := false
 
 # Audio
 AUDIO_FEATURE_ENABLED_FLUENCE := true
