@@ -148,6 +148,7 @@ TARGET_USE_SDCLANG := true
 #    device/lge/g2-common/sepolicy
 
 BOARD_VENDOR_SEPOLICY_DIRS += device/lge/g2-common/sepolicy_minimal
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
