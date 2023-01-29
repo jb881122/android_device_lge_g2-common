@@ -153,3 +153,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.data.large_tcp_window_size=true \
     wifi.interface=wlan0
+
+# BPF
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.kernel.ebpf.supported=false
+
