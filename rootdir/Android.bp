@@ -1,0 +1,39 @@
+sh_binary {
+    name: "set_baseband.sh",
+    src: "bin/set_baseband.sh",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.g2",
+    src: "etc/fstab.g2",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.g2.rc",
+    src: "etc/init.g2.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.g2.power.rc",
+    src: "etc/init.g2.power.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.g2.usb.rc",
+    src: "etc/init.g2.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.g2.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.g2.rc",
+    vendor: true,
+}
