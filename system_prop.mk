@@ -47,7 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     debug.hwui.use_buffer_age=false \
     debug.sf.disable_backpressure=1 \
-    debug.sf.latch_unsignaled=1 \
     debug.renderengine.backend=threaded \
     vendor.display.disable_rotator_downscale=1 \
     vendor.display.disable_scaler=0
