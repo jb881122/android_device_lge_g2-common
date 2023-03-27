@@ -51,7 +51,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x05000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/lge/msm8974
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CLANG_COMPILE := false
 
 # Audio
@@ -142,14 +141,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/lge/g2-common/releasetools
 TARGET_USE_SDCLANG := true
 
 # SELinux policies
+include device/qcom/sepolicy-legacy/sepolicy.mk
 
-#include device/qcom/sepolicy-legacy/sepolicy.mk
-
-#BOARD_SEPOLICY_DIRS += \
-#    device/lge/g2-common/sepolicy
-
-BOARD_VENDOR_SEPOLICY_DIRS += device/lge/g2-common/sepolicy_minimal
 SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_SEPOLICY_DIRS += \
+    device/lge/g2-common/sepolicy
 
 # Shims
 TARGET_LD_SHIM_LIBS := /system/vendor/lib/libqomx_jpegenc.so|libboringssl-compat.so \
