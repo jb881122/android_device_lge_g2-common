@@ -1,7 +1,0 @@
-type mpt_file, file_type, data_file_type;
-type adsprpcd_file, file_type;
-type bt_firmware_file, file_type;
-type firmware_file, file_type;
-type persist_file, file_type;
-type persist_drm_file, file_type;
-type sensors_persist_file, file_type;
