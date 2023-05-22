@@ -3,6 +3,7 @@ set_prop(vendor_init, default_prop)
 get_prop(vendor_init, system_prop)
 set_prop(vendor_init, system_prop)
 get_prop(vendor_init, init_service_status_prop)
+get_prop(vendor_init, baseband_prop)
 
 allow vendor_init bluetooth_data_file:file { setattr };
 
