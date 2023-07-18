@@ -118,7 +118,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
     camera.device@1.0-impl-legacy \
-    Snap \
     camera.msm8974 \
     libshim_atomic \
     libshim_camera_parameters
@@ -134,7 +133,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8974 \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     memtrack.msm8974
@@ -175,15 +173,8 @@ PRODUCT_PACKAGES += \
     init.g2.rc \
     init.g2.power.rc \
     init.g2.usb.rc \
-    init.recovery.g2.rc \
-    init.recovery.g2.power.rc \
     set_baseband.sh \
     ueventd.g2.rc
-
-# IPv6 tethering
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes
 
 # IRDA
 PRODUCT_PACKAGES += \
@@ -213,8 +204,6 @@ PRODUCT_PACKAGES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libdivxdrmdecrypt \
-    libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -222,7 +211,6 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libOmxVidcCommon \
     libstagefrighthw
 
 PRODUCT_COPY_FILES += \
