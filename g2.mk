@@ -175,8 +175,6 @@ PRODUCT_PACKAGES += \
     init.g2.rc \
     init.g2.power.rc \
     init.g2.usb.rc \
-    init.recovery.g2.rc \
-    init.recovery.g2.power.rc \
     set_baseband.sh \
     ueventd.g2.rc
 
@@ -257,6 +255,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librecovery_updater_g2 \
     fastbootd
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.g2.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.g2.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.g2.power.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.g2.power.rc
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
