@@ -29,6 +29,8 @@ import /vendor/etc/init/hw/init.g2.power.rc
 import /vendor/etc/init/hw/init.g2.usb.rc
 
 on early-init
+    mount tmpfs cgroup_root /sys/fs/cgroup
+
     mount debugfs debugfs /sys/kernel/debug
     chmod 0755 /sys/kernel/debug
     chown system system /sys/kernel/debug/kgsl/proc
